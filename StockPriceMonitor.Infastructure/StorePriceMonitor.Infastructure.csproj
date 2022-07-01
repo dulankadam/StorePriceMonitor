@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Customization\Views\" />
+    <Folder Include="Customization\StoredProcedures\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DependancyInjection" Version="1.0.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StockPriceMonitor.Core\StorePriceMonitor.Core.csproj" />
+    <ProjectReference Include="..\StockPriceMonitor.Domain\StorePriceMonitor.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
